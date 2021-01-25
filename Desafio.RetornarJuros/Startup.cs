@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
-namespace Desafio.RetornarJuros.Webapi
+namespace Desafio.RetornarJuros
 {
     public class Startup
     {

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Desafio.RetornarJuros.Webapi
+namespace Desafio.RetornarJuros
 {
     public class Program
     {
