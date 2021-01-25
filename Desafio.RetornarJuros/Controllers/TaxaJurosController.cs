@@ -5,9 +5,10 @@ namespace Desafio.RetornarJuros.Controllers
 {
     [ApiController]
     [Route("v1/[controller]")]
-    public class JurosController : ControllerBase
+    public class TaxaJurosController : ControllerBase
     {
-        [Route("taxaJuros")]
+        [Route("")]
+        [HttpGet]
         public ActionResult GetTaxaJuros()
         {
             var taxaAtual = TaxaJurosService.BuscarTaxaJurosAtual();

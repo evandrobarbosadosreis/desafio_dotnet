@@ -3,15 +3,15 @@ using Desafio.RetornarJuros.Services;
 using Microsoft.AspNetCore.Mvc;
 using Xunit;
 
-namespace Desafio.RetornarJuros.Testes
+namespace Desafio.RetornarJuros.Testes.Controllers
 {
-    public class JurosControllerTeste
+    public class TaxaJurosControllerTeste
     {
         [Fact]
         public void DeveBuscarTaxaDeJuros()
         {
             //Given
-            var controller = new JurosController();
+            var controller = new TaxaJurosController();
             var taxaEsperada = TaxaJurosService.BuscarTaxaJurosAtual();
 
             //When

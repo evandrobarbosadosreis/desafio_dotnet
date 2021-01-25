@@ -1,7 +1,7 @@
 using Desafio.CalcularJuros.Services;
 using Xunit;
 
-namespace Desafio.CalcularJuros.Testes
+namespace Desafio.CalcularJuros.Testes.Services
 {
     public class CalculadoraJurosServiceTeste
     {

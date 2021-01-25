@@ -1,7 +1,7 @@
 using Desafio.RetornarJuros.Services;
 using Xunit;
 
-namespace Desafio.RetornarJuros.Testes
+namespace Desafio.RetornarJuros.Testes.Services
 {
     public class TaxaJurosServiceTeste
     {
