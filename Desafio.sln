@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.RetornarJuros.Teste
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.RetornarJuros", "Desafio.RetornarJuros\Desafio.RetornarJuros.csproj", "{8DCCEB8E-4FE7-4444-8547-CAE4E3247EA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.CalcularJuros", "Desafio.CalcularJuros\Desafio.CalcularJuros.csproj", "{793FAB0D-B986-4B47-AB75-4722DC8BB6FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.CalcularJuros.Testes", "Desafio.CalcularJuros.Testes\Desafio.CalcularJuros.Testes.csproj", "{7DD36B33-AA0D-49F2-82E8-980E387B0108}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +48,29 @@ Global
 		{8DCCEB8E-4FE7-4444-8547-CAE4E3247EA3}.Release|x64.Build.0 = Release|Any CPU
 		{8DCCEB8E-4FE7-4444-8547-CAE4E3247EA3}.Release|x86.ActiveCfg = Release|Any CPU
 		{8DCCEB8E-4FE7-4444-8547-CAE4E3247EA3}.Release|x86.Build.0 = Release|Any CPU
+		{793FAB0D-B986-4B47-AB75-4722DC8BB6FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{793FAB0D-B986-4B47-AB75-4722DC8BB6FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{793FAB0D-B986-4B47-AB75-4722DC8BB6FD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{793FAB0D-B986-4B47-AB75-4722DC8BB6FD}.Debug|x64.Build.0 = Debug|Any CPU
+		{793FAB0D-B986-4B47-AB75-4722DC8BB6FD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{793FAB0D-B986-4B47-AB75-4722DC8BB6FD}.Debug|x86.Build.0 = Debug|Any CPU
+		{793FAB0D-B986-4B47-AB75-4722DC8BB6FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{793FAB0D-B986-4B47-AB75-4722DC8BB6FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{793FAB0D-B986-4B47-AB75-4722DC8BB6FD}.Release|x64.ActiveCfg = Release|Any CPU
+		{793FAB0D-B986-4B47-AB75-4722DC8BB6FD}.Release|x64.Build.0 = Release|Any CPU
+		{793FAB0D-B986-4B47-AB75-4722DC8BB6FD}.Release|x86.ActiveCfg = Release|Any CPU
+		{793FAB0D-B986-4B47-AB75-4722DC8BB6FD}.Release|x86.Build.0 = Release|Any CPU
+		{7DD36B33-AA0D-49F2-82E8-980E387B0108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DD36B33-AA0D-49F2-82E8-980E387B0108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DD36B33-AA0D-49F2-82E8-980E387B0108}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7DD36B33-AA0D-49F2-82E8-980E387B0108}.Debug|x64.Build.0 = Debug|Any CPU
+		{7DD36B33-AA0D-49F2-82E8-980E387B0108}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7DD36B33-AA0D-49F2-82E8-980E387B0108}.Debug|x86.Build.0 = Debug|Any CPU
+		{7DD36B33-AA0D-49F2-82E8-980E387B0108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DD36B33-AA0D-49F2-82E8-980E387B0108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DD36B33-AA0D-49F2-82E8-980E387B0108}.Release|x64.ActiveCfg = Release|Any CPU
+		{7DD36B33-AA0D-49F2-82E8-980E387B0108}.Release|x64.Build.0 = Release|Any CPU
+		{7DD36B33-AA0D-49F2-82E8-980E387B0108}.Release|x86.ActiveCfg = Release|Any CPU
+		{7DD36B33-AA0D-49F2-82E8-980E387B0108}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

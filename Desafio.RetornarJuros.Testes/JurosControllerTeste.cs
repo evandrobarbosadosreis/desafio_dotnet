@@ -15,7 +15,7 @@ namespace Desafio.RetornarJuros.Testes
             var taxaEsperada = TaxaJurosService.BuscarTaxaJurosAtual();
 
             //When
-            ActionResult<decimal> resposta = controller.Get();
+            ActionResult<double> resposta = controller.GetTaxaJuros();
 
             //Then
             var ok = Assert.IsType<OkObjectResult>(resposta.Result);

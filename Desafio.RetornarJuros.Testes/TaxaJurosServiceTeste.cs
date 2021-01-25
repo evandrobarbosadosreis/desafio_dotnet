@@ -8,11 +8,14 @@ namespace Desafio.RetornarJuros.Testes
         [Fact]
         public void DeveRetornarUmPorCento()
         {
+            //Given
+            var taxaEsperada = 0.01;
+
             //When
             var taxa = TaxaJurosService.BuscarTaxaJurosAtual();
-            
+
             //Then
-            Assert.Equal(0.01m, taxa);
+            Assert.Equal(taxaEsperada, taxa);
         }
     }
 }

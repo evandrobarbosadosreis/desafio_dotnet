@@ -2,9 +2,9 @@ namespace Desafio.RetornarJuros.Services
 {
     public static class TaxaJurosService
     {
-        public static decimal BuscarTaxaJurosAtual()
+        public static double BuscarTaxaJurosAtual()
         {
-            return 0.01m;
+            return 0.01;
         }
     }
 }

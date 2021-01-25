@@ -8,10 +8,9 @@ namespace Desafio.RetornarJuros.Controllers
     public class JurosController : ControllerBase
     {
         [Route("taxaJuros")]
-        public ActionResult Get()
+        public ActionResult GetTaxaJuros()
         {
             var taxaAtual = TaxaJurosService.BuscarTaxaJurosAtual();
-
             return Ok(taxaAtual);
         }
     }
