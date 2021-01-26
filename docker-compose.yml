@@ -7,8 +7,8 @@ services:
 
   calculajuros:
       build:
-          context: Microservices/CalculaJuros/
-          dockerfile: Microservices/CalculaJuros/Dockerfile
+          context: Microservices/CalcularJuros/
+          dockerfile: Microservices/CalcularJuros/Dockerfile
 
   gateway:
       build:
