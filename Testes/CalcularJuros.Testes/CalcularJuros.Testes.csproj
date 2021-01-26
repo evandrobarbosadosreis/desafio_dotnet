@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Services\CalcularJuros\CalcularJuros.csproj" />
+    <ProjectReference Include="..\..\Microservices\CalcularJuros\CalcularJuros.csproj" />
   </ItemGroup>
 
 </Project>

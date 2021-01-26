@@ -1,17 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
-using RetornarJuros.Services;
+using TaxaJuros.Services;
 
-namespace RetornarJuros.Controllers
+namespace TaxaJuros.Controllers
 {
-    [ApiController]
     [Route("[controller]")]
+    [ApiController]
     public class TaxaJurosController : ControllerBase
     {
         [Route("")]
         [HttpGet]
-        public ActionResult GetTaxaJuros()
+        public ActionResult Get()
         {
-            var taxaAtual = TaxaJurosService.BuscarTaxaJurosAtual();
+            var taxaAtual = TaxaDeJuros.BuscarTaxaDeJurosAtual();
+
             return Ok(taxaAtual);
         }
     }

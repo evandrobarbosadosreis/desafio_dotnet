@@ -1,33 +1,38 @@
 using System.Threading.Tasks;
-using CalcularJuros.Controllers;
-using CalcularJuros.Services;
-using CalcularJuros.Services.Interfaces;
-using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Xunit;
+using CalcularJuros.Controllers;
+using CalcularJuros.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CalcularJuros.Testes.Controllers
 {
+
     public class CalculaJurosControllerTeste
     {
+
         [Fact]
         public async Task DeveRetornarCalculoDeJuros()
         {
             //Given
-            var taxaDeJuros = 0.01;
-            var valorInicial = 100m;
+
+            //prepara os valores
+            var valorAplicado = 100m;
+            var taxaJuros = 0.01;
             var periodoEmMeses = 5;
-            var mock = new Mock<IConsultaTaxaDeJurosHttpService>();
-            mock.Setup(i => i.ConsultarTaxaDeJurosPorHTTP()).ReturnsAsync(taxaDeJuros);
-            var controller = new CalculaJurosController(mock.Object);
-            var valorEsperado = CalculaJurosService.CalcularJuros(valorInicial, taxaDeJuros, periodoEmMeses);
+            var valorFinalEsperado = 105.10m;
+            //prepara o mock do serviço de consulta http
+            var mockHTTP = new Mock<IConsultaTaxaDeJurosPorHTTP>();
+            mockHTTP.Setup(i => i.ExecutarConsultaHTTP()).ReturnsAsync(taxaJuros);
+            //cria o controller pra teste
+            var controller = new CalculaJurosController(mockHTTP.Object);
 
             //When
-            ActionResult<string> resposta = await controller.GetCalculoJuros(valorInicial, periodoEmMeses);
+            ActionResult<string> resposta = await controller.Get(valorAplicado, periodoEmMeses);
 
             //Then
             var ok = Assert.IsType<OkObjectResult>(resposta.Result);
-            Assert.Equal(valorEsperado, ok.Value);
+            Assert.Equal(valorFinalEsperado, ok.Value);
         }
     }
 }

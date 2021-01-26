@@ -5,17 +5,17 @@ using Xunit;
 
 namespace CalcularJuros.Testes.Controllers
 {
-    public class ShowmeTheCodeControllerTeste
+    public class ShowMeTheCodeControllerTeste
     {
         [Fact]
         public void DeveRetornarAURLCorreta()
         {
             //Given
-            var controller = new ShowmeTheCodeController();
-            var urlEsperada = GithubService.BuscarURL();
+            var controller = new ShowMeTheCodeController();
+            var urlEsperada = Github.BuscarURLDoRepositorio();
             
             //When
-            ActionResult<string> resposta = controller.GetURL();
+            ActionResult<string> resposta = controller.Get();
 
             //Then
             var ok = Assert.IsType<OkObjectResult>(resposta.Result);

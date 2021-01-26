@@ -1,21 +1,21 @@
-using RetornarJuros.Controllers;
-using RetornarJuros.Services;
+using TaxaJuros.Controllers;
+using TaxaJuros.Services;
 using Microsoft.AspNetCore.Mvc;
 using Xunit;
 
-namespace RetornarJuros.Testes.Controllers
+namespace TaxaJuros.Testes.Controllers
 {
     public class TaxaJurosControllerTeste
     {
         [Fact]
-        public void DeveBuscarTaxaDeJuros()
+        public void DeveBuscarATaxaDeJurosAtual()
         {
             //Given
             var controller = new TaxaJurosController();
-            var taxaEsperada = TaxaJurosService.BuscarTaxaJurosAtual();
+            var taxaEsperada = TaxaDeJuros.BuscarTaxaDeJurosAtual();
 
             //When
-            ActionResult<double> resposta = controller.GetTaxaJuros();
+            ActionResult<double> resposta = controller.Get();
 
             //Then
             var ok = Assert.IsType<OkObjectResult>(resposta.Result);

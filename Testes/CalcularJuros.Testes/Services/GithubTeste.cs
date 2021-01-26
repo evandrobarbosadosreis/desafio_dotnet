@@ -3,13 +3,13 @@ using Xunit;
 
 namespace CalcularJuros.Testes.Services
 {
-    public class GithubServiceTeste
+    public class GithubTeste
     {
         [Fact]
-        public void NaoDeveRetornarVazio()
+        public void NaoDeveRetornarURLVazia()
         {
             //When
-            var url = GithubService.BuscarURL();
+            var url = Github.BuscarURLDoRepositorio();
 
             //Then
             Assert.NotEmpty(url);

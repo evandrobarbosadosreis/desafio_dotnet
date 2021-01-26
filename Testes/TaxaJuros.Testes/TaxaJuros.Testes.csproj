@@ -20,6 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Services\RetornarJuros\RetornarJuros.csproj" />
+    <ProjectReference Include="..\..\Microservices\TaxaJuros\TaxaJuros.csproj" />
   </ItemGroup>
 </Project>
