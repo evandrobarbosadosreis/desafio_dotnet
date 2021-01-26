@@ -26,7 +26,7 @@ A aplicação consiste em duas APIs implementadas utilizando o conceito de micro
 
     `dotnet run --project .\Gateway\Gateway.csproj`
 
-6. Importe o arquivo [/Desafio.postman_collection.json]("Desafio.postman_collection.json") no Postman e, neste ponto, todas as requisições da pasta **"Sem Docker"** devem estar funcionando
+6. Importe a collection *Desafio.postman_collection.json* no Postman e, neste ponto, todas as requisições da pasta **Sem Docker** devem estar funcionando
 
 ## Excutando a aplicação COM Docker & DockerCompose:
 
@@ -38,4 +38,4 @@ A aplicação consiste em duas APIs implementadas utilizando o conceito de micro
 
 3. Aguarde o término do processo de deploy
 
-4. Importe o arquivo [/Desafio.postman_collection.json]("Desafio.postman_collection.json") no Postman e, neste ponto, todas as requisições da pasta **"Com Docker"** devem estar funcionando
+4. Importe a collection *Desafio.postman_collection.json* no Postman e, neste ponto, todas as requisições da pasta **Com Docker** devem estar funcionando
