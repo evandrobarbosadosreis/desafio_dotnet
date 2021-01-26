@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CalcularJuros.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class ShowMeTheCodeController : ControllerBase
     {

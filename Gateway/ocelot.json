@@ -1,7 +1,7 @@
 {
     "Routes": [
         {
-            "DownstreamPathTemplate": "/taxajuros",
+            "DownstreamPathTemplate": "/api/v1/taxajuros",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
@@ -12,7 +12,7 @@
             "UpstreamPathTemplate": "/taxaJuros"
         },
         {
-            "DownstreamPathTemplate": "/showmethecode",
+            "DownstreamPathTemplate": "/api/v1/showmethecode",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
@@ -23,7 +23,7 @@
             "UpstreamPathTemplate": "/showmethecode"
         },
         {
-            "DownstreamPathTemplate": "/calculajuros",
+            "DownstreamPathTemplate": "/api/v1/calculajuros",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {

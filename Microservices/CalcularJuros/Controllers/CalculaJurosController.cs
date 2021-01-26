@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CalcularJuros.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class CalculaJurosController : ControllerBase
     {

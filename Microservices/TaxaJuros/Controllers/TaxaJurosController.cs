@@ -3,7 +3,7 @@ using TaxaJuros.Services;
 
 namespace TaxaJuros.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class TaxaJurosController : ControllerBase
     {
