@@ -2,15 +2,15 @@ services:
 
   taxajuros:
       build:
-          context: .
+          context: Microservices/TaxaJuros/
           dockerfile: Microservices/TaxaJuros/Dockerfile
 
   calculajuros:
       build:
-          context: .
+          context: Microservices/CalculaJuros/
           dockerfile: Microservices/CalculaJuros/Dockerfile
 
   gateway:
       build:
-          context: .
+          context: Gateway/
           dockerfile: Gateway/Dockerfile
