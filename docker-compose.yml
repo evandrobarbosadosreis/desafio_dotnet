@@ -15,5 +15,7 @@ services:
   gateway:
     container_name: gateway
     hostname: gateway
+    ports: 
+        "80:80"
     build:
       context: ./Gateway/
