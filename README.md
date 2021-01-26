@@ -18,11 +18,11 @@ A aplicação consiste em duas APIs implementadas utilizando o conceito de micro
 
     Isso é necessário para carregar alguns arquivos de configuração específicos.
 
-4. Em **um novo terminal**, execute o microserviço de taxa de juros:
+4. Em **um novo terminal**, execute o microsserviço de taxa de juros:
 
     `dotnet run --project .\Microservices\TaxaJuros\TaxaJuros.csproj`
 
-5. Em **um novo terminal**, execute o microserviço de cálculo de juros:
+5. Em **um novo terminal**, execute o microsserviço de cálculo de juros:
 
     `dotnet run --project .\Microservices\CalcularJuros\CalcularJuros.csproj`
 
