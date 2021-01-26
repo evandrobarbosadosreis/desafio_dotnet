@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -11,12 +12,17 @@ namespace Gateway
             CreateHostBuilder(args).Build().Run();
         }
 
+        private static string GetEnvironment => Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.ConfigureAppConfiguration(c => c.AddJsonFile("ocelot.json"));
+                    webBuilder.ConfigureAppConfiguration(c => {
+                        c.AddJsonFile($"ocelot.json");
+                        c.AddJsonFile($"ocelot.{GetEnvironment}.json", true);
+                    });
                 });
     }
 }

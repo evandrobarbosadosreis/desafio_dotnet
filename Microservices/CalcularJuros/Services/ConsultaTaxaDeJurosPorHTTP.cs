@@ -3,13 +3,20 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using CalcularJuros.Services.Interfaces;
+using Microsoft.Extensions.Configuration;
 
 namespace CalcularJuros.Services
 {
     public class ConsultaTaxaDeJurosPorHTTP : IConsultaTaxaDeJurosPorHTTP
     {
+        private readonly IConfiguration Configuration;
 
-        public string URL => "http://gateway/taxajuros";
+        public string URL => Configuration.GetSection("URLs").GetSection("TaxaJurosAPI").Value;
+
+        public ConsultaTaxaDeJurosPorHTTP(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
 
         private async Task<double> ObterTaxaDoCorpoDaResposta(HttpResponseMessage respostaHTTP)
         {

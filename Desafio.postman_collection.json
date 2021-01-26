@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "c0686d81-30d1-4c4c-a53f-045238e360e2",
+		"name": "Desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sem docker",
+			"item": [
+				{
+					"name": "Gateway",
+					"item": [
+						{
+							"name": "Taxa juros",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/taxajuros",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"taxajuros"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CalcularJuros",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/calculajuros?valorInicial=100&meses=5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"calculajuros"
+									],
+									"query": [
+										{
+											"key": "valorInicial",
+											"value": "100"
+										},
+										{
+											"key": "meses",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ShowMeTheCode",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/showmethecode",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"showmethecode"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Microservices",
+					"item": [
+						{
+							"name": "CalcularJuros",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/calculajuros?valorInicial=100&meses=5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"calculajuros"
+									],
+									"query": [
+										{
+											"key": "valorInicial",
+											"value": "100"
+										},
+										{
+											"key": "meses",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ShowMeTheCode",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/v1/showmethecode",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"showmethecode"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TaxaJuros",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:9000/api/v1/taxaJuros",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "9000",
+									"path": [
+										"api",
+										"v1",
+										"taxaJuros"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
