@@ -1,16 +1,19 @@
 services:
 
   taxajuros:
-      build:
-          context: .
-          dockerfile: Microservices/TaxaJuros/Dockerfile
+    container_name: taxajuros
+    hostname: taxajuros
+    build:
+      context: ./Microservices/TaxaJuros/
 
   calculajuros:
-      build:
-          context: .
-          dockerfile: Microservices/CalcularJuros/Dockerfile
+    container_name: calculajuros
+    hostname: calculajuros
+    build:
+      context: ./Microservices/CalcularJuros/
 
   gateway:
-      build:
-          context: .
-          dockerfile: Gateway/Dockerfile
+    container_name: gateway
+    hostname: gateway
+    build:
+      context: ./Gateway/
