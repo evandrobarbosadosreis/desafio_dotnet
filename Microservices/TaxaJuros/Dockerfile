@@ -1,7 +1,5 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-EXPOSE 9000:80
-EXPOSE 9001:443
 
 COPY TaxaJuros.csproj .
 RUN dotnet restore

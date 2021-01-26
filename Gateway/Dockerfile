@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
 
-COPY CalcularJuros.csproj .
+COPY Gateway.csproj .
 RUN dotnet restore
 
 COPY . .
@@ -13,4 +13,4 @@ RUN dotnet publish -c release --no-build -o /app
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
 WORKDIR /app
 COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "CalcularJuros.dll"]
+ENTRYPOINT ["dotnet", "Gateway.dll"]
