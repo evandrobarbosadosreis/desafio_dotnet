@@ -1,0 +1,16 @@
+services:
+
+  taxajuros:
+      build:
+          context: .
+          dockerfile: Microservices/TaxaJuros/Dockerfile
+
+  calculajuros:
+      build:
+          context: .
+          dockerfile: Microservices/CalculaJuros/Dockerfile
+
+  gateway:
+      build:
+          context: .
+          dockerfile: Gateway/Dockerfile

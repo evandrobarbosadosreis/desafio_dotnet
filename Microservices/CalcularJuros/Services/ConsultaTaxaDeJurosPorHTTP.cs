@@ -9,7 +9,7 @@ namespace CalcularJuros.Services
     public class ConsultaTaxaDeJurosPorHTTP : IConsultaTaxaDeJurosPorHTTP
     {
 
-        public string URL => "http://localhost:5000/api/taxajuros";
+        public string URL => "http://localhost/taxajuros";
 
         private async Task<double> ObterTaxaDoCorpoDaResposta(HttpResponseMessage respostaHTTP)
         {

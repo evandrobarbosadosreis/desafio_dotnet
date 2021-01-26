@@ -1,5 +1,6 @@
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
+EXPOSE 80
 
 COPY CalcularJuros.csproj .
 RUN dotnet restore
