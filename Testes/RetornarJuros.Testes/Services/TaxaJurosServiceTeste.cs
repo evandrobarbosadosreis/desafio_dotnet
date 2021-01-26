@@ -1,0 +1,21 @@
+using RetornarJuros.Services;
+using Xunit;
+
+namespace RetornarJuros.Testes.Services
+{
+    public class TaxaJurosServiceTeste
+    {
+        [Fact]
+        public void DeveRetornarUmPorCento()
+        {
+            //Given
+            var taxaEsperada = 0.01;
+
+            //When
+            var taxa = TaxaJurosService.BuscarTaxaJurosAtual();
+
+            //Then
+            Assert.Equal(taxaEsperada, taxa);
+        }
+    }
+}

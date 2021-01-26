@@ -1,0 +1,40 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/taxajuros",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 9000
+                }
+            ],
+            "UpstreamPathTemplate": "/api/taxaJuros"
+        },
+        {
+            "DownstreamPathTemplate": "/showmethecode",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 8000
+                }
+            ],
+            "UpstreamPathTemplate": "/api/showmethecode"
+        },
+        {
+            "DownstreamPathTemplate": "/calculajuros",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 8000
+                }
+            ],
+            "UpstreamPathTemplate": "/api/calculajuros"
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl": "http://localhost:5000"
+    }
+}
