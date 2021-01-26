@@ -21,7 +21,7 @@ namespace TaxaJuros
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TaxaJuros.Webapi", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TaxaJuros", Version = "v1" });
             });
         }
 
@@ -31,7 +31,7 @@ namespace TaxaJuros
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TaxaJuros.Webapi v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TaxaJuros v1"));
             }
 
             app.UseHttpsRedirection();
