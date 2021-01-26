@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "Sem docker",
+			"name": "Sem Docker",
 			"item": [
 				{
 					"name": "Gateway",
@@ -157,6 +157,75 @@
 							"response": []
 						}
 					]
+				}
+			]
+		},
+		{
+			"name": "Com Docker",
+			"item": [
+				{
+					"name": "CalcularJuros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/calculajuros?valorInicial=100&meses=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"calculajuros"
+							],
+							"query": [
+								{
+									"key": "valorInicial",
+									"value": "100"
+								},
+								{
+									"key": "meses",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TaxaJuros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/taxaJuros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"taxaJuros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowMeTheCode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/showmethecode",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"showmethecode"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
