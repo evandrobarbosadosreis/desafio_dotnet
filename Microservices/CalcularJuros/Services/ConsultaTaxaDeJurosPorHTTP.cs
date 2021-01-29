@@ -30,7 +30,7 @@ namespace CalcularJuros.Services
 
         public async Task<double> ExecutarConsultaHTTP()
         {
-            //Não tenho experiência em microserviços, portanto, tenho lá 
+            //Não tenho experiência em microsserviços, portanto, tenho lá 
             //minhas dúvidas se uma requisição HTTP no gateway é a melhor
             //maneira de estabelecer uma comunicação entre os componentes
             using (var http = new HttpClient())
